@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário Equipe Log</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="form-container" class="hidden">
+    <form id="logForm">
+      <h2>Formulário para Equipe LOG</h2>
+
+      <div class="form-group">
+        <label>Nome + ID Discord:</label>
+        <input type="text" name="nome_id" required />
+      </div>
+
+      <div class="form-group">
+        <label>Qual seu horário disponível pra ajudar na log?</label>
+        <input type="text" name="horario" required />
+      </div>
+
+      <div class="form-group">
+        <label>Atua em alguma área da staff? Se sim, quais?</label>
+        <input type="text" name="area_staff" required />
+      </div>
+
+      <div class="form-group">
+        <label>Já teve experiência como Equipe. LOG? Se sim, me diga mais sobre.</label>
+        <textarea name="experiencia_log" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Pra que serve o comando hackperma? E quando ele deve ser usado?</label>
+        <textarea name="hackperma" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Em quais situações o propmanager seria ideal para achar hacker?</label>
+        <textarea name="propmanager" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Pra que serve o delobjs? E em quais situações seria necessário usá-lo?</label>
+        <textarea name="delobjs" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Pra que serve o forcedelete? E porque ele pode ser usado quando o delobjs não funcionar?</label>
+        <textarea name="forcedelete" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Como você poderia achar o hack que usa função do mod menu pra falar alto?</label>
+        <textarea name="modmenu" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Se você banir um hacker e ele não for kikado da cidade, o que você poderia fazer?</label>
+        <textarea name="ban_nao_kickado" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Se você ver um hacker zaralhando na cidade, o que você faria?</label>
+        <textarea name="hacker_zaralho" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Está ciente que terá uma meta semanal de 50 banimentos?</label>
+        <select name="meta_semanal" required>
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Se alguém te marcar num ticket falando que o dinheiro dele sumiu, o que você faria?</label>
+        <textarea name="ticket_dinheiro" required></textarea>
+      </div>
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
